@@ -1534,9 +1534,9 @@
 			children = (
 				DEF355ED2DA03F780024180C /* Utils */,
 				DEF355F42DA03F780024180C /* Views */,
-				DEF355F52DA03F780024180C /* PaygateView.swift */,
 				DEF355F62DA03F780024180C /* PaygateViewController.swift */,
 				DEF355F72DA03F780024180C /* PaygateViewModel.swift */,
+				DEF355F52DA03F780024180C /* PaygateView.swift */,
 			);
 			path = Paygate;
 			sourceTree = "<group>";
