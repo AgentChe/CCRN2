@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		945CF6BC3D1C54F016DDE168 /* Pods_CCRN2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF301FDE616D77E9CCCB0D1 /* Pods_CCRN2.framework */; };
+		DE93B5EA2DB251BF0072A6AD /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93B5E92DB251BF0072A6AD /* RequestReview.swift */; };
 		DEF354E12DA03ED10024180C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF354D52DA03ED10024180C /* Assets.xcassets */; };
 		DEF354E32DA03ED10024180C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF354D82DA03ED10024180C /* LaunchScreen.storyboard */; };
 		DEF354F02DA03F710024180C /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEF354E82DA03F710024180C /* Inter-Medium.otf */; };
@@ -246,7 +247,6 @@
 		DEF357A82DA03F780024180C /* PlanStudyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF355502DA03F780024180C /* PlanStudyScoreView.swift */; };
 		DEF357A92DA03F780024180C /* SendAnswerResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF356A62DA03F780024180C /* SendAnswerResponseMapper.swift */; };
 		DEF357AA2DA03F780024180C /* OStudyModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF355E32DA03F780024180C /* OStudyModeView.swift */; };
-		DEF357AB2DA03F780024180C /* TestRateUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF356252DA03F780024180C /* TestRateUs.swift */; };
 		DEF357AC2DA03F780024180C /* XOREncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF355222DA03F780024180C /* XOREncryption.swift */; };
 		DEF357AD2DA03F780024180C /* QuestionTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF356372DA03F780024180C /* QuestionTableElement.swift */; };
 		DEF357AE2DA03F780024180C /* QuestionTableExplanationImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF356312DA03F780024180C /* QuestionTableExplanationImageCell.swift */; };
@@ -351,6 +351,7 @@
 
 /* Begin PBXFileReference section */
 		DDF301FDE616D77E9CCCB0D1 /* Pods_CCRN2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCRN2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE93B5E92DB251BF0072A6AD /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DEF354BC2DA03EC90024180C /* CCRN2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCRN2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF354D52DA03ED10024180C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF354D62DA03ED10024180C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -579,7 +580,6 @@
 		DEF356202DA03F780024180C /* TestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestType.swift; sourceTree = "<group>"; };
 		DEF356222DA03F780024180C /* TestCloseMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCloseMediator.swift; sourceTree = "<group>"; };
 		DEF356232DA03F780024180C /* TestCloseObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCloseObserver.swift; sourceTree = "<group>"; };
-		DEF356252DA03F780024180C /* TestRateUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRateUs.swift; sourceTree = "<group>"; };
 		DEF356272DA03F780024180C /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		DEF356292DA03F780024180C /* QuestionContentCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionCell.swift; sourceTree = "<group>"; };
 		DEF3562A2DA03F780024180C /* QuestionContentCollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionType.swift; sourceTree = "<group>"; };
@@ -891,6 +891,7 @@
 				DEF355202DA03F780024180C /* TextAttributes.swift */,
 				DEF355212DA03F780024180C /* Weak.swift */,
 				DEF355222DA03F780024180C /* XOREncryption.swift */,
+				DE93B5E92DB251BF0072A6AD /* RequestReview.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1679,14 +1680,6 @@
 			path = Observer;
 			sourceTree = "<group>";
 		};
-		DEF356262DA03F780024180C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DEF356252DA03F780024180C /* TestRateUs.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		DEF356282DA03F780024180C /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
@@ -1755,7 +1748,6 @@
 			children = (
 				DEF356212DA03F780024180C /* Model */,
 				DEF356242DA03F780024180C /* Observer */,
-				DEF356262DA03F780024180C /* Utils */,
 				DEF3563C2DA03F780024180C /* Views */,
 				DEF3563D2DA03F780024180C /* TestView.swift */,
 				DEF3563E2DA03F780024180C /* TestViewController.swift */,
@@ -2427,6 +2419,7 @@
 				DEF357412DA03F780024180C /* String+Extension.swift in Sources */,
 				DEF357422DA03F780024180C /* GetTestStatsResponseMapper.swift in Sources */,
 				DEF357432DA03F780024180C /* TestStatsViewController.swift in Sources */,
+				DE93B5EA2DB251BF0072A6AD /* RequestReview.swift in Sources */,
 				DEF357442DA03F780024180C /* AnswerMapper.swift in Sources */,
 				DEF357452DA03F780024180C /* SplashViewController.swift in Sources */,
 				DEF357462DA03F780024180C /* PaddingPickerView.swift in Sources */,
@@ -2530,7 +2523,6 @@
 				DEF357A82DA03F780024180C /* PlanStudyScoreView.swift in Sources */,
 				DEF357A92DA03F780024180C /* SendAnswerResponseMapper.swift in Sources */,
 				DEF357AA2DA03F780024180C /* OStudyModeView.swift in Sources */,
-				DEF357AB2DA03F780024180C /* TestRateUs.swift in Sources */,
 				DEF357AC2DA03F780024180C /* XOREncryption.swift in Sources */,
 				DEF357AD2DA03F780024180C /* QuestionTableElement.swift in Sources */,
 				DEF357AE2DA03F780024180C /* QuestionTableExplanationImageCell.swift in Sources */,
@@ -2663,7 +2655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RWST5PC946;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2679,7 +2671,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.exams.ccrn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2702,7 +2694,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RWST5PC946;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2718,7 +2710,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.exams.ccrn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
